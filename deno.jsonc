@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "test": "deno test --coverage=cov",
+    "coverage": "deno coverage ./cov"
+  }
+}
