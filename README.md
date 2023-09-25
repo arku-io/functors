@@ -1,4 +1,4 @@
-<kbd><img src="https://i.imgur.com/Aas0yVe.gif" alt="loxt" width="500"/></kbd>
+<img src="https://i.imgur.com/Aas0yVe.gif" alt="loxt" width="500"/>
 
 [![deno module](https://shield.deno.dev/x/vika)](https://deno.land/x/vika)
 
@@ -23,7 +23,7 @@ async function getData<T>(url: string): Promise<Option<T>> {
     return Some(await res.json());
 }
 
-const todo = await getData<Todo[]>("https://jsonplaceholder.typicode.com/todos/1");
+const todo = await getData<Todo>("https://jsonplaceholder.typicode.com/todos/1");
 const message = todo.match({
     some: (t) => `User of id "${t.userId}" has a todo of id "${t.id}" with title "${t.title}" that was ${t.completed ? "" : "not"} completed`,
     none: "No task found",
