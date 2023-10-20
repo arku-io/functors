@@ -1,6 +1,6 @@
-// Copyright 2023 the arku authors. All rights reserved. MIT license.
+// Copyright 2023 the vika authors. All rights reserved. MIT license.
 
-export {
+      export {
   isNone,
   isSome,
   type Match as OptionMatch,
